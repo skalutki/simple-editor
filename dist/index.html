@@ -25,23 +25,24 @@
 
 <body>
     <header class="header">
-        <h1>Simple editor</h1>
+        <h1 class="header_tittle">Simple editor</h1>
     </header>
 
     <main class="main">
+        <section class="editor">
+            <section class="editor__story">
+                <label for="story"></label><br>
+                <textarea name="story" placeholder="Remember, be nice!" class="editor__story__input"></textarea>
+            </section>
+            <section class="editor__button">
+                <button class="editor__button__trash editor__button__trash--js" aria-label="trash" type="reset"> 
+                    <img class="editor__button__trash--icon" src="/assets/img/outline-delete-24px.png"></button>
 
-        <p>
-            <label for="story">Tell us yor story:</label><br>
-            <textarea name="story" placeholder="Remember, be nice!"></textarea>
-        </p>
-        <button class="trash" aria-label="trash" type="reset"> 
-            <img class="trash__icon" src="/assets/img/outline-delete-24px.png">
-        </button>
+                <button class="editor__button__save editor__button__save--js" aria-label="save button" type="button">save</button>
 
-        <button class="save" aria-label="save button" type="button">save</button>
-
-        <button class="load" aria-label="load button" type="button">load</button>
-
+                <button class="editor__button__load editor__button__load--js" aria-label="load button" type="button">load</button>
+            </section>
+        </section>
     </main>
 
 

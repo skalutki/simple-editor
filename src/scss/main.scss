@@ -10,6 +10,83 @@ html {
     box-sizing: inherit;
 }
 
-body {}
+body {
+    background-color: #2E294E;
+    color: #F46036;
+}
 
-.main {}
+.main {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    height: 85vh;
+}
+
+.editor {
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    &__story {
+        justify-content: center;
+        align-items: flex-start;
+        &__input {
+            min-width: 800px;
+            width: 100%;
+            min-height: 600px;
+            height: 100%;
+            border-radius: 4px;
+            resize: none;
+        }
+    }
+    &__button {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        &__trash {
+            background: none;
+            border: none;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            bottom: -32px;
+            &--icon {}
+        }
+        &__save {
+            background: #C5D86D;
+            @include button;
+            position: absolute;
+            right: 124px;
+            bottom: -32px;
+        }
+        &__load {
+            background: #1B998B;
+            @include button;
+            position: absolute;
+            right: 0px;
+            bottom: -32px;
+        }
+    }
+}
+
+.header {
+    margin: auto;
+    &_tittle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 64px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+}
+
+.footer {
+    font-size: 12px;
+}
