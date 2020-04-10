@@ -20,6 +20,18 @@ body {
     width: 100%;
     margin: auto;
     height: 85vh;
+    @media (max-width: $tablet) {
+        max-width: 700px;
+        width: 100%;
+    }
+    @media (max-width: $mobile-big) {
+        max-width: 600px;
+        width: 100%;
+    }
+    @media (max-width: $mobile) {
+        max-width: 320px;
+        width: 100%;
+    }
 }
 
 .editor {
@@ -37,6 +49,22 @@ body {
             height: 100%;
             border-radius: 4px;
             resize: none;
+            @media (max-width: $tablet) {
+                min-width: 700px;
+                width: 100%;
+            }
+            @media (max-width: $mobile-big) {
+                min-width: 600px;
+                width: 100%;
+                min-height: 400px;
+                height: 100%;
+            }
+            @media (max-width: $mobile) {
+                min-width: 320px;
+                width: 100%;
+                min-height: 150px;
+                height: 100%;
+            }
         }
     }
     &__button {
@@ -63,6 +91,10 @@ body {
             position: absolute;
             right: 124px;
             bottom: -32px;
+            @media (max-width: $mobile) {
+                width: 50px;
+                height: 24px;
+            }
         }
         &__load {
             background: #1B998B;
@@ -70,6 +102,10 @@ body {
             position: absolute;
             right: 0px;
             bottom: -32px;
+            @media (max-width: $mobile) {
+                width: 50px;
+                height: 24px;
+            }
         }
     }
 }
