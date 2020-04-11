@@ -16,24 +16,19 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
-const input = document.querySelector('.editor__story__input--js');
-const load = document.querySelector('.editor__button__load--js');
-const save = document.querySelector('.editor__button__save--js');
-const trash = document.querySelector('.editor__button__trash--js');
+const message = document.querySelector('.form__message--js');
+const load = document.querySelector('.form__button__load--js');
+const save = document.querySelector('.form__button__save--js');
+
 
 
 
 save.addEventListener('click', (e) => {
     e.preventDefault();
-    localStorage.setItem('input', input.value);
+    localStorage.setItem('message', message.value);
 });
 
 load.addEventListener('click', (e) => {
     e.preventDefault();
-    input.value = localStorage.getItem('input');
-});
-
-trash.addEventListener('click', (e) => {
-    e.preventDefault();
-    input.value = localStorage.removeItem('input');
+    message.value = localStorage.getItem('message');
 });
