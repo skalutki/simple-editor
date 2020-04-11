@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=latin-ext');
 html {
     box-sizing: border-box;
+    font-family: 'Open Sans';
 }
 
 *,
@@ -14,116 +15,56 @@ html {
 body {
     background-color: #2E294E;
     color: #F46036;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .main {
     max-width: 800px;
     width: 100%;
-    margin: auto;
-    height: 85vh;
-    @media (max-width: $tablet) {
-        max-width: 700px;
-        width: 100%;
-    }
-    @media (max-width: $mobile-big) {
-        max-width: 600px;
-        width: 100%;
-    }
-    @media (max-width: $mobile) {
-        max-width: 320px;
-        width: 100%;
-    }
-}
-
-.editor {
-    margin: 32px auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    &__story {
-        justify-content: center;
-        align-items: flex-start;
-        &__input {
-            min-width: 800px;
-            width: 100%;
-            min-height: 600px;
-            height: 100%;
-            border-radius: 4px;
-            resize: none;
-            @media (max-width: $tablet) {
-                min-width: 700px;
-                width: 100%;
-            }
-            @media (max-width: $mobile-big) {
-                min-width: 600px;
-                width: 100%;
-                min-height: 400px;
-                height: 100%;
-            }
-            @media (max-width: $mobile) {
-                min-width: 320px;
-                width: 100%;
-                min-height: 150px;
-                height: 100%;
-            }
-        }
-    }
-    &__button {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 16px;
-        justify-content: flex-end;
-        align-items: flex-end;
-        position: relative;
-        &__trash {
-            background: none;
-            border: none;
-            width: 24px;
-            height: 24px;
-            position: absolute;
-            bottom: -32px;
-            &--icon {}
-        }
-        &__save {
-            background: #C5D86D;
-            @include button;
-            position: absolute;
-            right: 124px;
-            bottom: -32px;
-            @media (max-width: $mobile) {
-                width: 50px;
-                height: 24px;
-            }
-        }
-        &__load {
-            background: #1B998B;
-            @include button;
-            position: absolute;
-            right: 0px;
-            bottom: -32px;
-            @media (max-width: $mobile) {
-                width: 50px;
-                height: 24px;
-            }
-        }
-    }
 }
 
 .header {
-    margin: auto;
-    &_tittle {
-        font-family: "Open Sans";
-        font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+.form {
+    &__actions {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button {
+        border: 1px solid #121232;
+        border-radius: 4px;
+        padding: 16px;
+        min-width: 100px;
         font-weight: 600;
-        font-size: 44px;
-        line-height: 64px;
-        margin-bottom: 24px;
-        text-align: center;
+        letter-spacing: 0.5px;
+        &--save {
+            background: #F46036;
+        }
+    }
+    &__label {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 8px;
+    }
+    &__message {
+        width: 100%;
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid #D3D4D8;
+        min-height: 600px;
     }
 }
 
 .footer {
+    margin-top: 64px;
     font-size: 12px;
 }

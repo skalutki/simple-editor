@@ -310,7 +310,8 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: 'Open Sans'; }
 
 *,
 *:before,
@@ -320,130 +321,61 @@ html {
 
 body {
   background-color: #2E294E;
-  color: #F46036; }
-
-.main {
-  max-width: 800px;
-  width: 100%;
-  margin: auto;
-  height: 85vh; }
-  @media (max-width: 1024px) {
-    .main {
-      max-width: 700px;
-      width: 100%; } }
-  @media (max-width: 860px) {
-    .main {
-      max-width: 600px;
-      width: 100%; } }
-  @media (max-width: 640) {
-    .main {
-      max-width: 320px;
-      width: 100%; } }
-
-.editor {
-  margin: 32px auto;
+  color: #F46036;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-  .editor__story {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    .editor__story__input {
-      min-width: 800px;
-      width: 100%;
-      min-height: 600px;
-      height: 100%;
-      border-radius: 4px;
-      resize: none; }
-      @media (max-width: 1024px) {
-        .editor__story__input {
-          min-width: 700px;
-          width: 100%; } }
-      @media (max-width: 860px) {
-        .editor__story__input {
-          min-width: 600px;
-          width: 100%;
-          min-height: 400px;
-          height: 100%; } }
-      @media (max-width: 640) {
-        .editor__story__input {
-          min-width: 320px;
-          width: 100%;
-          min-height: 150px;
-          height: 100%; } }
-  .editor__button {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    position: relative; }
-    .editor__button__trash {
-      background: none;
-      border: none;
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      bottom: -32px; }
-    .editor__button__save {
-      background: #C5D86D;
-      border-radius: 4px;
-      border: 1px solid black;
-      -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      width: 100px;
-      height: 24px;
-      position: absolute;
-      right: 124px;
-      bottom: -32px; }
-      @media (max-width: 640) {
-        .editor__button__save {
-          width: 50px;
-          height: 24px; } }
-    .editor__button__load {
-      background: #1B998B;
-      border-radius: 4px;
-      border: 1px solid black;
-      -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      width: 100px;
-      height: 24px;
-      position: absolute;
-      right: 0px;
-      bottom: -32px; }
-      @media (max-width: 640) {
-        .editor__button__load {
-          width: 50px;
-          height: 24px; } }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh; }
+
+.main {
+  max-width: 800px;
+  width: 100%; }
 
 .header {
-  margin: auto; }
-  .header_tittle {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 64px;
-    margin-bottom: 24px;
-    text-align: center; }
+  font-weight: 600;
+  font-size: 44px;
+  margin: 0;
+  margin-bottom: 48px; }
+
+.form__actions {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.form__button {
+  border: 1px solid #121232;
+  border-radius: 4px;
+  padding: 16px;
+  min-width: 100px;
+  font-weight: 600;
+  letter-spacing: 0.5px; }
+  .form__button--save {
+    background: #F46036; }
+
+.form__label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px; }
+
+.form__message {
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #D3D4D8;
+  min-height: 600px; }
 
 .footer {
+  margin-top: 64px;
   font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */
